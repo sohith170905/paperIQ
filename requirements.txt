@@ -4,6 +4,7 @@ numpy
 pandas
 python-docx
 textblob
+nltk
 plotly
 fpdf2
 scikit-learn
