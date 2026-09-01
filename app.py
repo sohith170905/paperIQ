@@ -5,6 +5,14 @@ import numpy as np
 import pandas as pd
 from collections import Counter
 import docx as docx_lib
+import nltk
+
+for package in ["punkt", "punkt_tab"]:
+    try:
+        nltk.data.find(f"tokenizers/{package}")
+    except LookupError:
+        nltk.download(package, quiet=True)
+
 from textblob import TextBlob
 import plotly.graph_objects as go
 from fpdf import FPDF
